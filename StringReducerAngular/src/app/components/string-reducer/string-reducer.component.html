@@ -1,0 +1,18 @@
+<div class = "string-length-container">
+    <app-input-form (dataSubmitted) = "onConvert($event)"></app-input-form>
+
+    <div class = "text-container" *ngIf = "startConvert"> 
+
+        <h5> Reduced Text </h5>
+
+        <hr>
+
+        <div class = "reduced-text">
+            <p>
+                {{ textToConvert | summary : limit }}
+            </p>
+        </div>
+
+    </div>
+
+</div>

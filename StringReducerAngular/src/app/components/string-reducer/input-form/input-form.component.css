@@ -1,0 +1,15 @@
+.input-form-container {
+    padding: 40px 80px;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+label {
+    color: #000000;
+    font-weight: normal;
+}
+
+input.ng-touched.ng-invalid,
+input.ng-dirty.ng-invalid {
+    border: 2px solid #e74c3c;
+}

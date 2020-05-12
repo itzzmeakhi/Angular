@@ -1,0 +1,48 @@
+<div class = "input-form-container">
+
+    <form [formGroup] = "stringLengthReducerForm" (ngSubmit) = "onFormSubmit()">
+  
+      <h4> String length Reducer </h4>
+  
+      <hr>
+  
+      <!-- Long Text Section -->
+  
+      <div class = "form-group">
+  
+        <label for = "longText"> Long Text </label>
+  
+        <input
+          type = "text"
+          class = "form-control"
+          id = "longText"
+          name = "longText"
+          formControlName = "longText">
+  
+      </div>
+  
+      <!-- Required Length Section -->
+  
+      <div class = "form-group">
+  
+        <label for = "requiredLength"> Required Length </label>
+  
+        <input
+          type = "number"
+          class = "form-control"
+          id = "requiredLength"
+          name = "requiredLength"
+          formControlName = "requiredLength">
+
+      </div>
+
+      <button
+        type = "submit"
+        class = "btn btn-success"
+        [disabled] = "stringLengthReducerForm.invalid">
+        Convert
+    </button>
+    
+    </form>
+  
+  </div>
